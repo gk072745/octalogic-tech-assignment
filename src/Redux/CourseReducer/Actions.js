@@ -18,5 +18,20 @@ export const getCourses = (payload) => (dispatch) => {
   dispatch(getCourseRequest());
 
   try {
-  } catch (error) {}
+    if (payload) {
+      axios({
+        url: `http://localhost:3000/courses?q=${payload}`,
+      }).then(({ data }) => {
+        dispatch(getCourseSuccess(data));
+      });
+    } else {
+      axios({
+        url: "http://localhost:3000/courses",
+      }).then(({ data }) => {
+        dispatch(getCourseSuccess(data));
+      });
+    }
+  } catch (error) {
+    dispatch(getCourseSuccess(error.massage));
+  }
 };

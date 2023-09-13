@@ -40,6 +40,9 @@ module.exports = {
           grayBg: "#E5E7EB",
           tealBg: "#b2eecf",
           pinkClr: "#901e75",
+          active: "#cff9df",
+          closed: "#fec0ca",
+          archived: "#e5e7eb",
         },
 
         destructive: {

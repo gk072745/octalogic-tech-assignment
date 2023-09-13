@@ -124,7 +124,7 @@
       "dayOfWeek": "Thursday",
       "numberOfStudents": 18,
       "price": "$70",
-      "status": "Active"
+      "status": "Closed"
     },
     {
       "courseName": "Bass Guitar",
@@ -134,7 +134,7 @@
       "dayOfWeek": "Tuesday",
       "numberOfStudents": 15,
       "price": "$55",
-      "status": "Active"
+      "status": "Closed"
     },
     {
       "courseName": "Flute",
@@ -144,7 +144,7 @@
       "dayOfWeek": "Friday",
       "numberOfStudents": 22,
       "price": "$65",
-      "status": "Active"
+      "status": "Archived"
     },
     {
       "courseName": "Piano",
@@ -154,7 +154,7 @@
       "dayOfWeek": "Tuesday",
       "numberOfStudents": 30,
       "price": "$75",
-      "status": "Active"
+      "status": "Archived"
     },
     {
       "courseName": "Violin",
@@ -164,7 +164,7 @@
       "dayOfWeek": "Wednesday",
       "numberOfStudents": 25,
       "price": "$70",
-      "status": "Active"
+      "status": "Archived"
     },
     {
       "courseName": "Saxophone",
@@ -174,7 +174,7 @@
       "dayOfWeek": "Thursday",
       "numberOfStudents": 18,
       "price": "$80",
-      "status": "Active"
+      "status": "Closed"
     },
     {
       "courseName": "Drums",
@@ -194,107 +194,7 @@
       "dayOfWeek": "Tuesday",
       "numberOfStudents": 15,
       "price": "$60",
-      "status": "Active"
-    },
-    {
-      "courseName": "Trumpet",
-      "description": "Trumpet lessons for brass instrument enthusiasts.",
-      "instructor": "Ms. Ava Harris",
-      "instrument": "Trumpet",
-      "dayOfWeek": "Wednesday",
-      "numberOfStudents": 20,
-      "price": "$70",
-      "status": "Active"
-    },
-    {
-      "courseName": "Clarinet",
-      "description": "Clarinet classes for woodwind instrument lovers.",
-      "instructor": "Mr. Logan Jackson",
-      "instrument": "Clarinet",
-      "dayOfWeek": "Thursday",
-      "numberOfStudents": 16,
-      "price": "$65",
-      "status": "Active"
-    },
-    {
-      "courseName": "Harp",
-      "description": "Harp lessons for those seeking a unique musical experience.",
-      "instructor": "Ms. Mia White",
-      "instrument": "Harp",
-      "dayOfWeek": "Friday",
-      "numberOfStudents": 12,
-      "price": "$80",
-      "status": "Active"
-    },
-    {
-      "courseName": "Cello",
-      "description": "Cello classes for cellists of all levels.",
-      "instructor": "Mr. Elijah Harris",
-      "instrument": "Cello",
-      "dayOfWeek": "Monday",
-      "numberOfStudents": 14,
-      "price": "$70",
-      "status": "Active"
-    },
-    {
-      "courseName": "Trombone",
-      "description": "Trombone lessons for brass instrument enthusiasts.",
-      "instructor": "Ms. Isabella Lee",
-      "instrument": "Trombone",
-      "dayOfWeek": "Wednesday",
-      "numberOfStudents": 18,
-      "price": "$75",
-      "status": "Active"
-    },
-    {
-      "courseName": "Organ",
-      "description": "Organ classes for those interested in keyboard instruments.",
-      "instructor": "Mr. Mason Lewis",
-      "instrument": "Organ",
-      "dayOfWeek": "Tuesday",
-      "numberOfStudents": 10,
-      "price": "$80",
-      "status": "Active"
-    },
-    {
-      "courseName": "Accordion",
-      "description": "Accordion lessons for lovers of folk music.",
-      "instructor": "Ms. Oliver Clark",
-      "instrument": "Accordion",
-      "dayOfWeek": "Thursday",
-      "numberOfStudents": 8,
-      "price": "$75",
-      "status": "Active"
-    },
-    {
-      "courseName": "Xylophone",
-      "description": "Xylophone classes for percussion enthusiasts.",
-      "instructor": "Mr. Benjamin Turner",
-      "instrument": "Xylophone",
-      "dayOfWeek": "Friday",
-      "numberOfStudents": 12,
-      "price": "$70",
-      "status": "Active"
-    },
-    {
-      "courseName": "Bagpipes",
-      "description": "Bagpipe lessons for those interested in Scottish music.",
-      "instructor": "Ms. Lily Collins",
-      "instrument": "Bagpipes",
-      "dayOfWeek": "Monday",
-      "numberOfStudents": 6,
-      "price": "$85",
-      "status": "Active"
-    },
-    {
-      "courseName": "Harmonica",
-      "description": "Harmonica classes for blues and folk enthusiasts.",
-      "instructor": "Mr. Daniel Turner",
-      "instrument": "Harmonica",
-      "dayOfWeek": "Wednesday",
-      "numberOfStudents": 8,
-      "price": "$65",
-      "status": "Active"
+      "status": "Archived"
     }
   ]
 }

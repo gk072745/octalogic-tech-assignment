@@ -13,8 +13,6 @@ const reducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         isLoading: true,
-        isError: false,
-        courses: [],
       };
 
     // getCourses success state...........................
@@ -22,7 +20,6 @@ const reducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         isLoading: false,
-        isError: false,
         courses: payload,
       };
 
@@ -32,7 +29,6 @@ const reducer = (state = initialState, { type, payload }) => {
         ...state,
         isLoading: false,
         isError: true,
-        courses: [],
       };
 
     // default case
