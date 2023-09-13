@@ -16,5 +16,6 @@ const MainRoute = () => {
             <Route path="/courses" element={<PrivateRoute><Courses /></PrivateRoute>} />
         </Routes>
     );
+
 };
 export default MainRoute;

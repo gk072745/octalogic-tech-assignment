@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
-	],
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -15,21 +15,31 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+
     extend: {
       colors: {
-        border: "hsl(var(--border))",
+        background: "#f4f4f4",
+        foreground: "#83858B",
+        border: "#D1D5DB",
+
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          background: "#fff",
+          foreground: "#83858b",
         },
+
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#212529",
+          foreground: "#83858b",
         },
+
+        custom: {
+          pinkBg: "#fedfe1",
+          grayBg: "#E5E7EB",
+        },
+
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -50,6 +60,20 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        custom: ["Nunito Sans", "sans"],
+      },
+      fontWeight: {
+        primary: 700,
+        secondary: 400,
+      },
+      fontSize: {
+        xs: "0.75rem",
+        sm: "0.875rem",
+        md: "1rem",
+        lg: "1.125rem",
+        xl: "1.5rem",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -73,4 +97,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
