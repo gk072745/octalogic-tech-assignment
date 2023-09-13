@@ -1,6 +1,7 @@
+import { getData, setData } from "../Configs";
 import * as types from "./ActionTypes";
 
-const initialState = {
+const initialState = getData("userData") || {
   isLoading: false,
   isError: false,
   students: [],
@@ -20,6 +21,14 @@ const reducer = (state = initialState, { type, payload }) => {
 
     //  getStudent success state
     case types.GET_STUDENT_SUCCESS:
+      const userData1 = {
+        ...state,
+        isLoading: false,
+        isError: false,
+        enroll: payload,
+      };
+      setData("userData", userData1);
+      return userData1;
       return {
         ...state,
         isLoading: false,
@@ -47,12 +56,14 @@ const reducer = (state = initialState, { type, payload }) => {
 
     //  getStudent success state
     case types.GET_ENROLL_SUCCESS:
-      return {
+      const userData = {
         ...state,
         isLoading: false,
         isError: false,
         enroll: payload,
       };
+      setData("userData", userData);
+      return userData;
 
     //   getStudent error state
     case types.GET_ENROLL_ERROR:

@@ -1,6 +1,7 @@
+import { getData, setData } from "../Configs";
 import * as types from "./ActionTypes";
 
-const initialState = {
+const initialState = getData("Auth") || {
   isLoading: false,
   isError: false,
   isSignup: false,
@@ -47,12 +48,15 @@ const reducer = (state = initialState, { type, payload }) => {
 
     // Login success state ...................
     case types.GET_LOGIN_SUCCESS:
-      return {
+      let loginObj = {
         ...state,
         isLoading: false,
         isLogin: true,
         isError: false,
       };
+
+      setData("Auth", loginObj);
+      return loginObj;
 
     // Login error state ...................
     case types.GET_LOGIN_ERROR:
@@ -73,12 +77,15 @@ const reducer = (state = initialState, { type, payload }) => {
 
     // Logout success state ...................
     case types.GET_LOGOUT_SUCCESS:
-      return {
+      let logoutObj = {
         ...state,
         isLoading: false,
         isLogin: false,
         isError: false,
+        isSignup: false,
       };
+      setData("Auth", logoutObj);
+      return logoutObj;
 
     // Logout error state ...................
     case types.GET_LOGOUT_ERROR:
