@@ -3,11 +3,10 @@ import { Navigate, useLocation } from "react-router-dom"
 
 
 export const PrivateRoute = ({ children }) => {
-    const isAuth = useSelector((store) => store.AuthReducer.isAuth)
+    const isLogin = useSelector((store) => store.AuthReducer.isLogin)
     const location = useLocation()
 
-
-    if (!isAuth) {
+    if (!isLogin) {
         return <Navigate to={"/login"} state={{ data: location.pathname }} replace />
     }
     return children

@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "email": "gk072745@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "gk07122745@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "a@a.com",
+      "password": "1",
+      "id": 3
+    }
+  ],
+  "courses": [],
+  "students": []
+}

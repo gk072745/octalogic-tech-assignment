@@ -59,7 +59,7 @@ const reducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         isLoading: false,
-        isLogin: true,
+        isLogin: false,
         isError: true,
       };
 

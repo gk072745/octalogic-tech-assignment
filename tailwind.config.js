@@ -19,7 +19,7 @@ module.exports = {
     extend: {
       colors: {
         background: "#f4f4f4",
-        foreground: "#83858B",
+        foreground: "#83858b",
         border: "#D1D5DB",
 
         input: "hsl(var(--input))",
@@ -67,13 +67,14 @@ module.exports = {
       fontWeight: {
         primary: 700,
         secondary: 400,
+        bolder: 900,
       },
       fontSize: {
-        xs: "0.75rem",
-        sm: "0.875rem",
-        md: "1rem",
-        lg: "1.125rem",
-        xl: "1.5rem",
+        xs: "12px",
+        sm: "14px",
+        md: "22px",
+        lg: "28px",
+        xl: "90px",
       },
       borderRadius: {
         lg: "var(--radius)",

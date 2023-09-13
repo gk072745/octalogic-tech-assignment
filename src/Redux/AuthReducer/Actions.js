@@ -18,7 +18,18 @@ export const getSignupError = (payload) => {
 export const signup = (payload) => (dispatch) => {
   dispatch(getSignupRequest());
   try {
-  } catch (error) {}
+    axios({
+      method: "POST",
+      data: payload,
+      url: "http://localhost:3000/users",
+    }).then((res) => {
+      if (res.status === 201) {
+        dispatch(getSignupSuccess(res.data));
+      }
+    });
+  } catch (error) {
+    dispatch(getSignupError(error.massage));
+  }
 };
 
 // login request.........................
@@ -37,7 +48,20 @@ export const getLoginError = (payload) => {
 export const login = (payload) => (dispatch) => {
   dispatch(getLoginRequest());
   try {
-  } catch (error) {}
+    axios({
+      method: "GET",
+      params: payload,
+      url: "http://localhost:3000/users",
+    }).then(({ data }) => {
+      if (data.length) {
+        dispatch(getLoginSuccess(data[0]));
+      } else {
+        dispatch(getLoginError("Please check username or password!"));
+      }
+    });
+  } catch (error) {
+    dispatch(getLoginError("Please check username or password!"));
+  }
 };
 
 // logout request.........................
@@ -46,16 +70,19 @@ export const getLogoutRequest = () => {
   return { type: types.GET_LOGOUT_REQUEST };
 };
 
-export const getLogoutSuccess = (payload) => {
-  return { type: types.GET_LOGIN_SUCCESS, payload };
+export const getLogoutSuccess = () => {
+  return { type: types.GET_LOGOUT_SUCCESS };
 };
 
-export const getLogoutError = (payload) => {
-  return { type: types.GET_LOGOUT_ERROR, payload };
+export const getLogoutError = () => {
+  return { type: types.GET_LOGOUT_ERROR };
 };
 
-export const logout = (payload) => (dispatch) => {
+export const logout = () => (dispatch) => {
   dispatch(getLogoutRequest());
   try {
-  } catch (error) {}
+    dispatch(getLogoutSuccess());
+  } catch (error) {
+    dispatch(getLogoutError());
+  }
 };
