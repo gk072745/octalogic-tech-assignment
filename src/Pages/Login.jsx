@@ -21,8 +21,8 @@ const Login = () => {
 
     useEffect(() => {
         let autofill = JSON.parse(sessionStorage.getItem("signupData"))
-        setEmail(autofill.email)
-        setPass(autofill.password)
+        if (autofill?.email) setEmail(autofill)
+        if (autofill?.password) setPass(autofill?.password)
 
     }, [])
 
