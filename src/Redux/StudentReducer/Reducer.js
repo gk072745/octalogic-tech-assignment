@@ -1,7 +1,10 @@
 import { getData, setData } from "../Configs";
 import * as types from "./ActionTypes";
 
-const initialState = getData("userData") || {
+const studentsDAta = getData("userData");
+const [students, enroll] = studentsDAta;
+
+const initialState = (students.length && enroll.length && studentsDAta) || {
   isLoading: false,
   isError: false,
   students: [],
