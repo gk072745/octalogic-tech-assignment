@@ -1,10 +1,7 @@
 import { getData, setData } from "../Configs";
 import * as types from "./ActionTypes";
 
-const studentsDAta = getData("userData");
-const [students, enroll] = studentsDAta;
-
-const initialState = (students.length && enroll.length && studentsDAta) || {
+const initialState = getData("userData") || {
   isLoading: false,
   isError: false,
   students: [],
@@ -18,8 +15,6 @@ const reducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         isLoading: true,
-        isError: false,
-        students: [],
       };
 
     //  getStudent success state
@@ -27,17 +22,10 @@ const reducer = (state = initialState, { type, payload }) => {
       const userData1 = {
         ...state,
         isLoading: false,
-        isError: false,
-        enroll: payload,
+        students: payload,
       };
       setData("userData", userData1);
       return userData1;
-      return {
-        ...state,
-        isLoading: false,
-        isError: false,
-        students: payload,
-      };
 
     //   getStudent error state
     case types.GET_STUDENT_ERROR:
@@ -45,7 +33,6 @@ const reducer = (state = initialState, { type, payload }) => {
         ...state,
         isLoading: false,
         isError: true,
-        students: [],
       };
     // ...........................
     //  getEnroll request state
@@ -53,8 +40,6 @@ const reducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         isLoading: true,
-        isError: false,
-        enroll: [],
       };
 
     //  getStudent success state
@@ -62,7 +47,6 @@ const reducer = (state = initialState, { type, payload }) => {
       const userData = {
         ...state,
         isLoading: false,
-        isError: false,
         enroll: payload,
       };
       setData("userData", userData);
@@ -74,7 +58,6 @@ const reducer = (state = initialState, { type, payload }) => {
         ...state,
         isLoading: false,
         isError: true,
-        enroll: [],
       };
 
     //   default case

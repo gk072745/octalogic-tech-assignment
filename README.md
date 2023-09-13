@@ -42,6 +42,10 @@ A small music course learning student management frontend project.
 
 ![Home](./src/assets/home.png)
 
+![Home2](./src/assets/home2.png)
+
 ![Courses](./src/assets/courses.png)
 
 ![Courses2](./src/assets/courses2.png)
+
+![Courses3](./src/assets/courses3.png)
