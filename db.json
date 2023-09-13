@@ -16,6 +16,285 @@
       "id": 3
     }
   ],
-  "courses": [],
-  "students": []
+  "latestEnrollment": [
+    {
+      "enrollmentNumber": "1563124",
+      "studentName": "John Doe",
+      "courseName": "Percussion",
+      "fees": "$120",
+      "enrollmentDate": "12-08-223"
+    },
+    {
+      "enrollmentNumber": "1563125",
+      "studentName": "Alice Smith",
+      "courseName": "Guitar",
+      "fees": "$150",
+      "enrollmentDate": "15-08-223"
+    },
+    {
+      "enrollmentNumber": "1563126",
+      "studentName": "Bob Johnson",
+      "courseName": "Violin",
+      "fees": "$130",
+      "enrollmentDate": "18-08-223"
+    },
+    {
+      "enrollmentNumber": "1563127",
+      "studentName": "Emily Brown",
+      "courseName": "Piano",
+      "fees": "$140",
+      "enrollmentDate": "20-08-223"
+    },
+    {
+      "enrollmentNumber": "1563128",
+      "studentName": "David Lee",
+      "courseName": "Saxophone",
+      "fees": "$160",
+      "enrollmentDate": "22-08-223"
+    }
+  ],
+  "bestStudents": [
+    {
+      "registrationNumber": "43422",
+      "firstName": "John",
+      "lastName": "Doe",
+      "course": "3",
+      "totalFees": "$300",
+      "registrationDate": "01-06-2023"
+    },
+    {
+      "registrationNumber": "43423",
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "course": "3",
+      "totalFees": "$300",
+      "registrationDate": "02-06-2023"
+    },
+    {
+      "registrationNumber": "43424",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "course": "3",
+      "totalFees": "$300",
+      "registrationDate": "03-06-2023"
+    },
+    {
+      "registrationNumber": "43425",
+      "firstName": "Emily",
+      "lastName": "Brown",
+      "course": "3",
+      "totalFees": "$300",
+      "registrationDate": "04-06-2023"
+    },
+    {
+      "registrationNumber": "43426",
+      "firstName": "David",
+      "lastName": "Lee",
+      "course": "3",
+      "totalFees": "$300",
+      "registrationDate": "05-06-2023"
+    }
+  ],
+  "courses": [
+    {
+      "courseName": "Classical Guitar",
+      "description": "Guitar classes for beginners and intermediate players.",
+      "instructor": "Ms. Jane Doe",
+      "instrument": "Guitar",
+      "dayOfWeek": "Wednesday",
+      "numberOfStudents": 26,
+      "price": "$60",
+      "status": "Active"
+    },
+    {
+      "courseName": "Acoustic Guitar",
+      "description": "Acoustic guitar lessons for all skill levels.",
+      "instructor": "Mr. John Smith",
+      "instrument": "Guitar",
+      "dayOfWeek": "Monday",
+      "numberOfStudents": 20,
+      "price": "$50",
+      "status": "Active"
+    },
+    {
+      "courseName": "Electric Guitar",
+      "description": "Electric guitar classes with a focus on rock and metal.",
+      "instructor": "Ms. Emily Brown",
+      "instrument": "Guitar",
+      "dayOfWeek": "Thursday",
+      "numberOfStudents": 18,
+      "price": "$70",
+      "status": "Active"
+    },
+    {
+      "courseName": "Bass Guitar",
+      "description": "Bass guitar lessons for aspiring bassists.",
+      "instructor": "Mr. David Lee",
+      "instrument": "Guitar",
+      "dayOfWeek": "Tuesday",
+      "numberOfStudents": 15,
+      "price": "$55",
+      "status": "Active"
+    },
+    {
+      "courseName": "Flute",
+      "description": "Flute classes for beginners and advanced players.",
+      "instructor": "Ms. Sophia Wilson",
+      "instrument": "Flute",
+      "dayOfWeek": "Friday",
+      "numberOfStudents": 22,
+      "price": "$65",
+      "status": "Active"
+    },
+    {
+      "courseName": "Piano",
+      "description": "Piano lessons for all ages and skill levels.",
+      "instructor": "Mr. Michael Johnson",
+      "instrument": "Piano",
+      "dayOfWeek": "Tuesday",
+      "numberOfStudents": 30,
+      "price": "$75",
+      "status": "Active"
+    },
+    {
+      "courseName": "Violin",
+      "description": "Violin classes for beginners and advanced players.",
+      "instructor": "Ms. Olivia Martinez",
+      "instrument": "Violin",
+      "dayOfWeek": "Wednesday",
+      "numberOfStudents": 25,
+      "price": "$70",
+      "status": "Active"
+    },
+    {
+      "courseName": "Saxophone",
+      "description": "Saxophone lessons with a focus on jazz and blues.",
+      "instructor": "Mr. Liam Taylor",
+      "instrument": "Saxophone",
+      "dayOfWeek": "Thursday",
+      "numberOfStudents": 18,
+      "price": "$80",
+      "status": "Active"
+    },
+    {
+      "courseName": "Drums",
+      "description": "Drum lessons for rhythm enthusiasts.",
+      "instructor": "Ms. Emma Anderson",
+      "instrument": "Drums",
+      "dayOfWeek": "Monday",
+      "numberOfStudents": 20,
+      "price": "$65",
+      "status": "Active"
+    },
+    {
+      "courseName": "Vocal",
+      "description": "Vocal classes for aspiring singers.",
+      "instructor": "Mr. Noah Wilson",
+      "instrument": "Voice",
+      "dayOfWeek": "Tuesday",
+      "numberOfStudents": 15,
+      "price": "$60",
+      "status": "Active"
+    },
+    {
+      "courseName": "Trumpet",
+      "description": "Trumpet lessons for brass instrument enthusiasts.",
+      "instructor": "Ms. Ava Harris",
+      "instrument": "Trumpet",
+      "dayOfWeek": "Wednesday",
+      "numberOfStudents": 20,
+      "price": "$70",
+      "status": "Active"
+    },
+    {
+      "courseName": "Clarinet",
+      "description": "Clarinet classes for woodwind instrument lovers.",
+      "instructor": "Mr. Logan Jackson",
+      "instrument": "Clarinet",
+      "dayOfWeek": "Thursday",
+      "numberOfStudents": 16,
+      "price": "$65",
+      "status": "Active"
+    },
+    {
+      "courseName": "Harp",
+      "description": "Harp lessons for those seeking a unique musical experience.",
+      "instructor": "Ms. Mia White",
+      "instrument": "Harp",
+      "dayOfWeek": "Friday",
+      "numberOfStudents": 12,
+      "price": "$80",
+      "status": "Active"
+    },
+    {
+      "courseName": "Cello",
+      "description": "Cello classes for cellists of all levels.",
+      "instructor": "Mr. Elijah Harris",
+      "instrument": "Cello",
+      "dayOfWeek": "Monday",
+      "numberOfStudents": 14,
+      "price": "$70",
+      "status": "Active"
+    },
+    {
+      "courseName": "Trombone",
+      "description": "Trombone lessons for brass instrument enthusiasts.",
+      "instructor": "Ms. Isabella Lee",
+      "instrument": "Trombone",
+      "dayOfWeek": "Wednesday",
+      "numberOfStudents": 18,
+      "price": "$75",
+      "status": "Active"
+    },
+    {
+      "courseName": "Organ",
+      "description": "Organ classes for those interested in keyboard instruments.",
+      "instructor": "Mr. Mason Lewis",
+      "instrument": "Organ",
+      "dayOfWeek": "Tuesday",
+      "numberOfStudents": 10,
+      "price": "$80",
+      "status": "Active"
+    },
+    {
+      "courseName": "Accordion",
+      "description": "Accordion lessons for lovers of folk music.",
+      "instructor": "Ms. Oliver Clark",
+      "instrument": "Accordion",
+      "dayOfWeek": "Thursday",
+      "numberOfStudents": 8,
+      "price": "$75",
+      "status": "Active"
+    },
+    {
+      "courseName": "Xylophone",
+      "description": "Xylophone classes for percussion enthusiasts.",
+      "instructor": "Mr. Benjamin Turner",
+      "instrument": "Xylophone",
+      "dayOfWeek": "Friday",
+      "numberOfStudents": 12,
+      "price": "$70",
+      "status": "Active"
+    },
+    {
+      "courseName": "Bagpipes",
+      "description": "Bagpipe lessons for those interested in Scottish music.",
+      "instructor": "Ms. Lily Collins",
+      "instrument": "Bagpipes",
+      "dayOfWeek": "Monday",
+      "numberOfStudents": 6,
+      "price": "$85",
+      "status": "Active"
+    },
+    {
+      "courseName": "Harmonica",
+      "description": "Harmonica classes for blues and folk enthusiasts.",
+      "instructor": "Mr. Daniel Turner",
+      "instrument": "Harmonica",
+      "dayOfWeek": "Wednesday",
+      "numberOfStudents": 8,
+      "price": "$65",
+      "status": "Active"
+    }
+  ]
 }

@@ -38,6 +38,8 @@ module.exports = {
         custom: {
           pinkBg: "#fedfe1",
           grayBg: "#E5E7EB",
+          tealBg: "#b2eecf",
+          pinkClr: "#901e75",
         },
 
         destructive: {
@@ -70,8 +72,10 @@ module.exports = {
         bolder: 900,
       },
       fontSize: {
+        xxs: "9px",
         xs: "12px",
         sm: "14px",
+        default: "16px",
         md: "22px",
         lg: "28px",
         xl: "90px",
