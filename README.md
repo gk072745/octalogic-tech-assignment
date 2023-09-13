@@ -1,8 +1,47 @@
-# React + Vite
+Copy code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# OCTALOGIC-TECH-ASSIGNMENT
 
-Currently, two official plugins are available:
+A small music course learning student management frontend project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Screenshots](#Screenshots)
+
+## Getting Started
+
+### Prerequisites
+
+- NPM
+- JSON Server
+- React.js
+  - Redux
+  - Tailwind CSS
+  - React-Router
+  - Axios
+
+### Installation
+
+1. Clone this repository:
+
+- git clone https://github.com/gk072745/octalogic-tech-assignment.git
+- Change into the project directory:
+
+- cd octalogic-tech-assignment
+  - Install project dependencies:
+  - npm install
+
+### Screenshots
+
+![Signup](./src/assets/signup.png)
+
+![Login](./src/assets/login.png)
+
+![Home](./src/assets/home.png)
+
+![Courses](./src/assets/courses.png)
+
+![Courses2](./src/assets/courses2.png)
